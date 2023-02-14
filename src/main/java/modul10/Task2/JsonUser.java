@@ -14,9 +14,9 @@ import java.util.Scanner;
 public class JsonUser {
     private List<User> users = new ArrayList<>();
 
-    public void UsdJasonUser() throws IOException {
+    public void usdJasonUser() throws IOException {
         addUsersToList();
-        UsersListToJson();
+        usersListToJson();
     }
 
     public void addUsersToList() throws IOException {
@@ -32,7 +32,7 @@ public class JsonUser {
         }
     }
 
-    public void UsersListToJson() throws IOException {
+    public void usersListToJson() throws IOException {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String toJson = gson.toJson(users);
         System.out.println(toJson);

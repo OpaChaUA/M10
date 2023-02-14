@@ -1,13 +1,12 @@
 package modul10;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
  class WordCounter {
 
-    public void Counter() {
+    public void counter() {
         int deftRepeat = 1;
 
         Map<String, Integer> wordsRepeat = new HashMap<>();

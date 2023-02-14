@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class ValidNumbers {
-    public void CheckNumbers() {
+    public void checkNumbers() {
         File file = new File("src/main/java/modul10/numbers.txt");
         if (file.exists()) {
             try (InputStream fis = new FileInputStream(file);
